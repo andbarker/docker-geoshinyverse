@@ -28,6 +28,8 @@ RUN apt-get update \
     tk-dev \
     unixodbc-dev \
   && install2.r --error \
+    bs4Dash \
+    cowplot \
     RColorBrewer \
     RandomFields \
     RNetCDF \
@@ -35,24 +37,34 @@ RUN apt-get update \
     deldir \
     gstat \
     hdf5r \
+    leaflet \
+    leaflet.extras \
     lidR \
     lwgeom \
     mapdata \
+    mapedit \
     maptools \
     mapview \
     ncdf4 \
+    openxlsx \
+    plotly \
     proj4 \
     raster \
     rgdal \
     rgeos \
     rlas \
     sf \
+    shinyalert \
+    shinydashboard \
+    shinythemes \
+    shinyWidgets \
     sp \
     spacetime \
     spatstat \
     spatialreg \
     spdep \
-	tmap \
+	  tmap \
+	  units \
     geoR \
     geosphere \
     ## from bioconductor
