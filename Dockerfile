@@ -35,6 +35,7 @@ RUN apt-get update \
     RNetCDF \
     classInt \
     deldir \
+    expint \
     gstat \
     hdf5r \
     leaflet \
@@ -45,16 +46,20 @@ RUN apt-get update \
     mapedit \
     maptools \
     mapview \
+    metR \
     ncdf4 \
     openxlsx \
+    patchwork \
     plotly \
     proj4 \
     raster \
     rgdal \
     rgeos \
+    rhandsontable \
     rlas \
     sf \
     shinyalert \
+    shinycssloaders \
     shinydashboard \
     shinythemes \
     shinyWidgets \
