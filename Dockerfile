@@ -30,37 +30,54 @@ RUN apt-get update \
   && install2.r --error \
     bs4Dash \
     cowplot \
+    DBI \
+    DT \
     RColorBrewer \
     RandomFields \
     RNetCDF \
     classInt \
+    data.table \
     deldir \
+    dplyr \
     expint \
+    flextable \
+    ggplot2 \
     gstat \
     hdf5r \
+    kableExtra \
     leaflet \
     leaflet.extras \
     lidR \
+    lubridate \
     lwgeom \
+    magrittr \
     mapdata \
     mapedit \
     maptools \
     mapview \
     metR \
     ncdf4 \
+    officer \
     openxlsx \
     patchwork \
     plotly \
     proj4 \
     raster \
+    RColorBrewer \
+    readr \
+    readxl \
     rgdal \
     rgeos \
     rhandsontable \
     rlas \
+    RSQLite \
+    scales \
     sf \
+    shiny \
     shinyalert \
     shinycssloaders \
     shinydashboard \
+    shinyjs \
     shinythemes \
     shinyWidgets \
     sp \
@@ -68,10 +85,14 @@ RUN apt-get update \
     spatstat \
     spatialreg \
     spdep \
+    stringr \
+    tidyr \
 	  tmap \
 	  units \
     geoR \
     geosphere \
     ## from bioconductor
     && R -e "BiocManager::install('rhdf5')"
-    
+    && R -e "devtools::install_github('nik01010/dashboardthemes')"
+    && R -e "devtools::install_github('dreamRs/shinyWidgets')"
+    && R -e "devtools::install_github('daattali/shinycssloaders')"
