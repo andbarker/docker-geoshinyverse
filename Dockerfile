@@ -92,7 +92,7 @@ RUN apt-get update \
     geoR \
     geosphere \
     ## from bioconductor
-    && R -e "BiocManager::install('rhdf5')"
-    && R -e "devtools::install_github('nik01010/dashboardthemes')"
-    && R -e "devtools::install_github('dreamRs/shinyWidgets')"
+    && R -e "BiocManager::install('rhdf5')" \
+    && R -e "devtools::install_github('nik01010/dashboardthemes')" \
+    && R -e "devtools::install_github('dreamRs/shinyWidgets')" \
     && R -e "devtools::install_github('daattali/shinycssloaders')"
