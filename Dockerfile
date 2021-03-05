@@ -1,4 +1,4 @@
-FROM rocker/shiny-verse:3.6.1
+FROM rocker/shiny-verse:4.0.3
 MAINTAINER "Andrew Barker" andbarker@gmail.com
 
 RUN apt-get update \
@@ -29,6 +29,7 @@ RUN apt-get update \
     unixodbc-dev \
   && install2.r --error \
     bs4Dash \
+    bslib \
     cowplot \
     DBI \
     DT \
@@ -38,9 +39,13 @@ RUN apt-get update \
     classInt \
     data.table \
     deldir \
+    devtools \
+    dbplyr \ 
     dplyr \
+    dtplyr \
     expint \
     flextable \
+    gdalUtils \
     ggplot2 \
     gstat \
     hdf5r \
@@ -48,21 +53,26 @@ RUN apt-get update \
     leaflet \
     leaflet.extras \
     lidR \
+    lintr \
     lubridate \
     lwgeom \
     magrittr \
     mapdata \
+    mapdeck \
     mapedit \
     maptools \
     mapview \
     metR \
     ncdf4 \
+    odbc \
     officer \
     openxlsx \
+    pkgdown \
     patchwork \
     plotly \
     proj4 \
     raster \
+    rbokeh \
     RColorBrewer \
     readr \
     readxl \
@@ -70,7 +80,10 @@ RUN apt-get update \
     rgeos \
     rhandsontable \
     rlas \
+    rmarkdown \
     RSQLite \
+    RPostgres \
+    rvest \ 
     scales \
     sf \
     shiny \
@@ -85,10 +98,13 @@ RUN apt-get update \
     spatstat \
     spatialreg \
     spdep \
+    stars \
     stringr \
+    tibble \
     tidyr \
 	  tmap \
 	  units \
+	  webshot \ 
     geoR \
     geosphere \
     ## from bioconductor
