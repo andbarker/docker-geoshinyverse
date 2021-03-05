@@ -13,7 +13,6 @@ RUN apt-get update \
     libhdf4-alt-dev \
     libhdf5-dev \
     libjq-dev \
-    liblwgeom-dev \
     libpq-dev \
     libproj-dev \
     libprotobuf-dev \
